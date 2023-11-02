@@ -7,14 +7,17 @@ def describe_website(url = "https://google.com"):
     page.goto(url)
 
     # Click the first link on the page
-    #page.click("a")
+    page.click("a")
 
     # Get and print the current URL
     new_url = page.url
     print(f"New URL: {new_url}")
 
+describe_website("https://google.com")
+
 while True:
     pass
 
 # browser.close()  # Commented out to keep the browser open
+
 
